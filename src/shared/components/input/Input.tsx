@@ -7,7 +7,7 @@ interface InputProps extends TextInputProps {
 }
 
 const Input = ({ ...props}: InputProps) =>{
-    return <ContainerInput {...props} />;   
+    return <ContainerInput {...props} />;
 };
 
 export default Input;
