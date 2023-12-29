@@ -13,11 +13,26 @@ interface ButtonProps extends TouchableOpacityProps{
 };
 
 const Button = ({ title, margin, type, ...props }: ButtonProps) => {
-    return (
-        <ButtonContainer margin={margin} {...props}>
-         <Text type={textTypes.BUTTON_BOLD} color={theme.colors.neutralTheme.white}>{title}</Text>
-        </ButtonContainer>
-    );
+    switch (type) {
+        case theme.buttons.buttonsTheme.secondary:
+            return (
+                <ButtonContainer margin={margin} {...props}>
+                 <Text type={textTypes.BUTTON_BOLD} color={theme.colors.neutralTheme.white}>
+                    {title}
+                </Text>
+                </ButtonContainer>
+            );
+        case theme.buttons.buttonsTheme.primary:
+        default:
+            return (
+                <ButtonContainer margin={margin} {...props}>
+                 <Text type={textTypes.BUTTON_BOLD} color={theme.colors.neutralTheme.white}>
+                    {title}
+                </Text>
+                </ButtonContainer>
+            );
+    }
+
 };
 
 export default Button;
