@@ -1,6 +1,12 @@
 import { TouchableOpacityProps } from "react-native";
 
-import { ActivityIndicatorButton, ButtonContainer, ButtonDisabled, ButtonSecondary, GradientButton } from "./button.style";
+import { 
+    ActivityIndicatorButton, 
+    ButtonContainer, 
+    ButtonDisabled, 
+    ButtonSecondary, 
+    GradientButton,
+    } from "./button.style";
 import Text from "../text/Text";
 import { theme } from "../../themes/theme";
 import { textTypes } from "../text/textTypes";
@@ -24,7 +30,7 @@ const Button = ({ title, margin, type, disabled, loading, onPress, ...props }: B
 
     const renderText = (color: string) => (
         <>
-        <Text type={textTypes.BUTTON_BOLD} color={color}>
+        <Text type={textTypes.BUTTON_SEMI_BOLD} color={color}>
                     {title}
                 </Text>
             {loading && <ActivityIndicatorButton color={theme.colors.neutralTheme.white}/>}
