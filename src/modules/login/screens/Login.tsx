@@ -15,7 +15,7 @@ const Login = () => {
         <View>
             <ContainerLogin>
                 <Input />
-                <Button type={theme.buttons.buttonsTheme.secondary} 
+                <Button type={theme.buttons.buttonsTheme.primary} 
                 margin="16px"
                 title="ENTRAR"
                 onPress={handleOnPress}
