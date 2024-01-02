@@ -1,4 +1,4 @@
-import { ActivityIndicator, TouchableOpacityProps } from "react-native";
+import { TouchableOpacityProps } from "react-native";
 
 import { ActivityIndicatorButton, ButtonContainer, ButtonDisabled, ButtonSecondary, GradientButton } from "./button.style";
 import Text from "../text/Text";
