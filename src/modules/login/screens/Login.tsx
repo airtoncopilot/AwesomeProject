@@ -4,7 +4,6 @@ import Button from "../../../shared/components/button/Button";
 import { ContainerLogin } from "../styles/login.style";
 import Input from "../../../shared/components/input/Input";
 import { theme } from "../../../shared/themes/theme";
-import { Icon } from "../../../shared/components/icon/icon";
 
 
 
